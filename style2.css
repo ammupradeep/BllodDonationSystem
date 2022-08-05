@@ -1,0 +1,114 @@
+/*
+    Author:Amukutty Pradeep
+    Theme:PHP Validation
+*/
+
+
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #8b0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.form1{
+    width: 550px;
+    border: 2px solid #ccc;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    color: #8b0000;
+}
+
+.form2{
+    height: 100%;
+    width: 1000px;
+    border: 2px solid #ccc;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    color: #8b0000;
+    overflow: auto;
+}
+
+h2{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+input{
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%; 
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+label{
+    color: #888;
+    font-size: 18px;
+    padding: 10px;
+}
+
+button{
+    color: #fff;
+    background: #8b0000;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover{
+    opacity: .7;
+}
+
+.dropdown{
+    display: inherit;
+    border: 2px solid #ccc;
+    width: 95%; 
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.error{
+    background: #f2dede;
+    color: #a94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+.success{
+    color: #D4EDDA;
+    background-color: #40754C;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+
+/* View.php section */
+
+th{
+    text-align: left;
+    width: 70%;
+    padding: 5px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}

@@ -1,0 +1,376 @@
+/*
+    Author:Amukutty Pradeep
+    Theme:Blood Donation System Responsive
+*/
+
+
+
+*{
+    margin: 0 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.img-responsive{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+a{
+    color: darkred;
+    text-decoration: none;
+}
+
+.text-padding{
+    padding: 6% ;
+}
+
+a:hover{
+    color: black;
+}
+
+.pre{
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+
+.btn{
+    padding: 15%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-primary{
+    background-color: white;
+    color: darkred;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    color: white;
+    background-color: #2c3a47;
+}
+
+.float-container{
+    position: relative;
+}
+
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+
+table{
+    width: 100%;
+    font-size: medium;
+}
+
+th{
+    font-weight: bold;
+    padding: 30px;
+    height: 100%;
+}
+
+td{
+    width: 50%;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.text-color{
+    color: #fff;
+}
+
+/* Style for Header section */
+
+
+.nav-logo {
+    font-size: 2.1rem;
+    color: darkred;
+    font-weight: bolder;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 10px;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: darkred;
+}
+
+.nav-link:hover{
+    color: #2c3a47;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: darkred;
+}
+
+
+
+
+/* Style for Quote section */
+
+.quote {
+    background-image: url(blood1.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2% 0 ;
+    /* border: 1px solid blue; */
+}
+
+
+/* Style for Main section */
+
+.main-btn{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 1px;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    border-radius: 5px;
+}
+
+.btns{
+    /* border: 1px solid blue; */
+    background: darkred;
+    color: white;
+    font-weight: bold;
+    padding: 6%;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Style for Sentence section */
+.statement{
+    font-size: 2rem;
+    border-radius: 5px;
+    margin: 10px;
+    color: darkred;
+}
+
+.heading{
+    padding: 3%;
+    background: darkred;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sent-content{
+    box-sizing: border-box;
+    border: 1px solid darkred;
+    padding: 3%;
+    font-size: medium;
+}
+
+/* Style for Blood Sample Section */
+.avail{
+    background: #ccc;
+}
+
+.nav-heading{
+    color: #8b0000;
+    padding: 2% 0 ;
+}
+
+.box-4{
+    width: 20%;
+    float: left;
+    margin: 2%;
+}
+
+/* Style for About section */
+
+.about-p{
+    height: 200px;
+    padding: 20px;
+    font-weight: lighter;    
+    font-size: 15px;
+}
+
+.span2{
+    font-weight: bold;    
+    font-size: 20px;
+}
+
+/* Style for Contact us section */
+
+.contacts{
+    background: #8b0000;
+    color: #fff;
+}
+
+.contact-heading{
+    padding: 25px;
+}
+
+.contact-us{
+    height: 300px;
+    padding: 20px;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.span1{
+    color: #ccc;
+    font-weight: bold;    
+}
+
+/* Style for Footer section */
+
+.footer{
+    background-color: #ccc;
+    color: darkred;
+    font-size: 10px;
+}
+
+.name{
+    color: #2c3a47;
+}
+
+/* Responsive screen */
+
+@media only screen and (max-width:768px){
+    /* .header-logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    } */
+
+    .nav-menu{
+        position: absolute;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item{
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger:hover{
+        color: white;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .quote{
+        max-width: 100%;
+        position: static;
+    }
+
+    .pre{
+        font-size: 25px;
+        margin: 1% auto;
+    }
+
+    .main-btn{
+        flex-direction: column;
+        padding: 20% 0;
+    }
+    .btns{
+        width: 95%;
+        font-size: 30px;
+    }
+    .btn{
+        font-size: 20px;
+    }
+    .heading{
+        font-size: 30px;
+    }
+
+    .sent-content{
+        font-size: 25px;
+    }
+
+    .footer{
+        font-size: 15px;
+    }
+}
+
+/* @media only screen and (max-width:400px){
+    .navbar ul{
+        text-align: center;
+        font-size: 10px;
+    }   
+} */
